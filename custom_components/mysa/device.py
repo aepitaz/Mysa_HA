@@ -417,7 +417,7 @@ class MysaDeviceLogic:
                 # Extract values from ACState numbered keys
                 if "1" in acstate_v:  # Power state
                     state["ACPower"] = int(acstate_v["1"])
-                if "2" in acstate_v:
+                if "2" in acstate_v:  # Mode
                     state["ACMode"] = int(acstate_v["2"])
                     if "Mode" not in state:
                         state["Mode"] = int(acstate_v["2"])
